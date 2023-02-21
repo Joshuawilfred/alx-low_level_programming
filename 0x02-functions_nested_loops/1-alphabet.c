@@ -4,7 +4,6 @@
  * _putchar - is a function I created to display output from for loop
  * Returns 0 'since its void'
  */
-
 void print_alphabet(void)
 {
 	int herufi;
