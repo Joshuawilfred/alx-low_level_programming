@@ -12,4 +12,4 @@ for (herufi = 'a'; herufi <= 'z'; herufi++)
 _putchar (herufi);
 }
 _putchar ('\n');
-}			
+}
