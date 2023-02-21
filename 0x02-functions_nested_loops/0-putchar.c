@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * This program will print out (_putcahr) and newline
+ * main - print out (_putcahr) and newline
  * Return: 0 'void'
  */
 int main(void)
