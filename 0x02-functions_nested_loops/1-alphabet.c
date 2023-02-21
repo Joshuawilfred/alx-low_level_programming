@@ -6,11 +6,10 @@
  */
 void print_alphabet(void)
 {
-	char herufi;
-	for (herufi = 'a'; herufi <= 'z'; herufi++)
-	{
-		_putchar (herufi);
-	}
-	_putchar ('\n');
+int herufi;
+for (herufi = 'a'; herufi <= 'z'; herufi++)
+{
+_putchar (letter);
 }
-			
+_putchar ('\n');
+}			
