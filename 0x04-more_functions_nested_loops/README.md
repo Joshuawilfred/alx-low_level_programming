@@ -1,0 +1,13 @@
+total 44
+-rw-r--r-- 1 root root 249 Feb 23 13:18 0-isupper.c
+-rw-r--r-- 1 root root 403 Feb 23 13:27 10-print_triangle.c
+-rw-r--r-- 1 root root 243 Feb 23 13:19 1-isdigit.c
+-rw-r--r-- 1 root root 172 Feb 23 13:20 2-mul.c
+-rw-r--r-- 1 root root 237 Feb 23 13:20 3-print_numbers.c
+-rw-r--r-- 1 root root 279 Feb 23 13:21 4-print_most_numbers.c
+-rw-r--r-- 1 root root 335 Feb 23 13:21 5-more_numbers.c
+-rw-r--r-- 1 root root 182 Feb 23 13:22 6-print_line.c
+-rw-r--r-- 1 root root 328 Feb 23 13:23 7-print_diagonal.c
+-rw-r--r-- 1 root root 318 Feb 23 13:23 8-print_square.c
+-rw-r--r-- 1 root root 409 Feb 23 13:24 9-fizz_buzz.c
+-rw-r--r-- 1 root root   0 Feb 23 13:33 README.md
