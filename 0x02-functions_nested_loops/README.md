@@ -1,3 +1,15 @@
-total 4
--rw-r--r-- 1 root root 58 Feb 21 06:08 0-putchar.c
--rw-r--r-- 1 root root  0 Feb 21 06:11 README.md
+total 52
+-rw-r--r-- 1 root root 266 Mar 11 13:40 0-putchar.c
+-rw-r--r-- 1 root root 150 Mar 11 13:40 10-add.c
+-rw-r--r-- 1 root root 311 Mar 11 13:40 11-print_to_98.c
+-rw-r--r-- 1 root root 317 Mar 11 13:40 1-alphabet.c
+-rw-r--r-- 1 root root 270 Mar 11 13:40 2-print_alphabet_x10.c
+-rw-r--r-- 1 root root 205 Mar 11 13:40 3-islower.c
+-rw-r--r-- 1 root root 230 Mar 11 13:40 4-isalpha.c
+-rw-r--r-- 1 root root 267 Mar 11 13:40 5-sign.c
+-rw-r--r-- 1 root root 203 Mar 11 13:40 6-abs.c
+-rw-r--r-- 1 root root 275 Mar 11 13:40 7-print_last_digit.c
+-rw-r--r-- 1 root root 349 Mar 11 13:40 8-24_hours.c
+-rw-r--r-- 1 root root 408 Mar 11 13:40 9-times_table.c
+-rw-r--r-- 1 root root 410 Mar 11 13:40 main.h
+-rw-r--r-- 1 root root   0 Mar 13 05:51 README.md
