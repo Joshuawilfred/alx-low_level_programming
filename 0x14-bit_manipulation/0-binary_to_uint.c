@@ -5,7 +5,7 @@
  * binary_to_uint - function to convert num to unsigned int
  *@j: pointer to string containing the binary number
  *
- * Return: 0
+ * Return: Converted number
  */
 unsigned int binary_to_uint (const char *j)
 {
@@ -14,16 +14,11 @@ unsigned int binary_to_uint (const char *j)
 
 	if (!j)
 		return (0);
-	for (w = 0; j[w] != '\0'; w++)
+	for (w = 0; j[w]; w++)
 	{
-		if (j[w] != '0' && j[w] != '1')
+		if (j[w] < '0' || j[w] > '1')
 		return (0);
-	}
-	for (w = 0; j[w] != '\0'; w++)
-	{
-		num << = 1;
-		if (j[w] == '1')
-			num += 1;
+		num = 2 * num + (j[w] - '0');
 	}
 	return (num);
 }
