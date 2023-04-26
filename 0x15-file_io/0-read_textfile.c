@@ -1,36 +1,48 @@
 #include "main.h"
 
 /**
- * read_textfile - Entry point
- * @filename: Name of the file to be read
- * @letters: The number of letters it should read and print
+ * read_textfile - Reads a text file and prints output.
+ * @filename: Name of file to be read
+ * @letters: Total number of letters it should read and print
  *
- * Return: If filename is NULL return 0
+ * Return: If Filename == NULL || Write fails return 0.
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-ssize_t o, r, w;
-char *buffer;
+	int fd;
+	ssize_t to_read, to_write;
+	char *buffer;
 
-if (filename == NULL)
-return (0);
+	/* Check if the filename is NULL */
+	if (filename == NULL)
+		return (0);
 
-buffer = malloc(sizeof(char) * letters);
-if (buffer == NULL)
-return (0);
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
+		return (0);
 
-o = open(filename, O_RDONLY);
-r = read(o, buffer, letters);
-w = write(STDOUT_FILENO, buffer, r);
+	/* Allocating malloc to buffer */
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+		return (0);
 
-if (o == -1 || r == -1 || w == -1 || w != r)
-{
-free(buffer);
-return (0);
-}
+	to_read = read(fd, buffer, letters);
+	if (to_read == -1)
+	{
+		free(buffer);
+		close(fd);
+		return (0);
+	}
 
-free(buffer);
-close(o);
+	to_write = write(STDOUT_FILENO, buffer, to_read);
+	if (to_write == -1)
+	{
+		free(buffer);
+		close(fd);
+		return (0);
+	}
+	close(fd);
+	return (to_read);
 
-return (w);
 }
