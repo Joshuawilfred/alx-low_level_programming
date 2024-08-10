@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stddef.h> 
+#include <math.h>
 #include <stdlib.h>
 
 int exponential_search(int *array, size_t size, int value);
