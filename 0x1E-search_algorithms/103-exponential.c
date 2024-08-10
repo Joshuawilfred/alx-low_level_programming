@@ -13,7 +13,7 @@
   *
   * Description: Prints the [sub]array being searched after each change.
   */
-int _binary_search(int *array, size_t left, size_t right, int value)
+static int _binary_search(int *array, size_t left, size_t right, int value)
 {
 	size_t i;
 
